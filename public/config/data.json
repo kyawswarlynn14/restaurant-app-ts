@@ -1,0 +1,124 @@
+{
+    "menu": [
+        {
+            "id": "001",
+            "category": "Chinese",
+            "title": "Kung Pao Chicken",
+            "description": "Stir-fried chicken with peanuts, vegetables, and chili peppers. The dish is typically bright and colorful, featuring reds from the chilies and greens from the vegetables.",
+            "image": "https://plus.unsplash.com/premium_photo-1667807522245-ae3de2a7813a?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 12
+        },
+        {
+            "id": "002",
+            "category": "Chinese",
+            "title": "Sweet and Sour Pork",
+            "description": "Deep-fried pork pieces coated in a tangy, sweet, and sour sauce, often accompanied by bell peppers, pineapple, and onions. It has a glossy red appearance due to the sauce.",
+            "image": "https://plus.unsplash.com/premium_photo-1712783885027-7ab13f196292?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 10
+        },
+        {
+            "id": "003",
+            "category": "Chinese",
+            "title": "Dumplings",
+            "description": "Dough filled with a mixture of meat and vegetables, boiled or steamed. They can be round or crescent-shaped, often served with dipping sauce.",
+            "image": "https://plus.unsplash.com/premium_photo-1661600643912-dc6dbb1db475?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 8
+        },
+        {
+            "id": "004",
+            "category": "Chinese",
+            "title": "Ma Po Tofu",
+            "description": "Spicy tofu dish with minced meat, typically pork, in a chili and bean-based sauce. It's vibrant red due to the chili oil, and the tofu cubes are soft and white.",
+            "image": "https://media.istockphoto.com/id/1208065072/photo/chinese-cuisine-tofu-and-mince-with-hot-spicy-sauce.jpg?s=1024x1024&w=is&k=20&c=MTjMv3mejp6O8Q8TjVX_2XsR4wBLixQ3pRwlJWERDWM=",
+            "price": 8
+        },
+        {
+            "id": "005",
+            "category": "Chinese",
+            "title": "Chow Mein",
+            "description": "Stir-fried noodles with vegetables, and sometimes meat or shrimp. The noodles are usually golden brown from the soy sauce, with colorful vegetables mixed in.",
+            "image": "https://media.istockphoto.com/id/1176490259/photo/vegetarian-schezwan-noodles-or-vegetable-hakka-noodles-or-chow-mein-in-black-bowl-at-dark.jpg?s=1024x1024&w=is&k=20&c=RTbcsZyN9lmd2doFKmjR9AW_4hIdUO0W2s9Y1YroHmc=",
+            "price": 10
+        },
+        {
+            "id": "006",
+            "category": "Japanese",
+            "title": "Sushi",
+            "description": "Sushi consists of vinegared rice combined with various ingredients such as raw fish, vegetables, and seaweed. Common types include nigiri (slices of raw fish over rice), maki (rolled sushi), and sashimi (slices of raw fish without rice).",
+            "image": "https://media.istockphoto.com/id/1320922361/photo/woman-taking-tasty-sushi-roll-with-salmon-from-set-at-table-closeup.jpg?s=1024x1024&w=is&k=20&c=NJvRHijQDEvCMjX3Tr7HgW3gjjZ6hWvYLCli4U27Y_E=",
+            "price": 10
+        },
+        {
+            "id": "007",
+            "category": "Japanese",
+            "title": "Ramen",
+            "description": "A noodle soup dish with Chinese-style wheat noodles served in a meat or fish-based broth, often flavored with soy sauce or miso, and topped with ingredients such as sliced pork, nori (seaweed), menma (bamboo shoots), and scallions.",
+            "image": "https://media.istockphoto.com/id/479542154/photo/miso-ramen-noodles-with-egg-enoki-and-pak-choi.jpg?s=1024x1024&w=is&k=20&c=hii8gI4k6SMm35k44dGW8hNBXPPDsZ9dk6XfLlXx1OE=",
+            "price": 6
+        },
+        {
+            "id": "008",
+            "category": "Japanese",
+            "title": "Tempura",
+            "description": "Tempura consists of seafood or vegetables that have been battered and deep-fried to a light, crispy texture. It is typically served with a dipping sauce or tentsuyu, a mix of dashi, mirin, and soy sauce.",
+            "image": "https://media.istockphoto.com/id/1295409972/photo/crispy-fried-shrimp-tempura-shrimp-tempura-japanese-national-food-delicious-and-healthy.jpg?s=1024x1024&w=is&k=20&c=yHzjBwSb6voN5q61l55M86SOlbxsbDlQNYb43tEX7M8=",
+            "price": 11
+        },
+        {
+            "id": "009",
+            "category": "Japanese",
+            "title": "Teriyaki Chicken",
+            "description": "Chicken that is grilled or broiled with a shiny glaze of soy sauce, mirin, and sugar. It is known for its sweet and savory flavor and glossy appearance.",
+            "image": "https://media.istockphoto.com/id/1348103225/photo/healthy-asian-teriyaki-chicken.jpg?s=1024x1024&w=is&k=20&c=QcEfos8tiImYClwJ-ZlDKHfOQgHWsuyAS0S4cQqaTn8=",
+            "price": 10
+        },
+        {
+            "id": "010",
+            "category": "Japanese",
+            "title": "Miso Soup",
+            "description": "A traditional Japanese soup made with a stock called dashi and softened miso paste. It often contains tofu, seaweed, and green onions. The soup is a staple in Japanese meals, known for its umami flavor and nourishing properties.",
+            "image": "https://media.istockphoto.com/id/1320227593/photo/miso-soup-with-nameko-mushrooms.jpg?s=1024x1024&w=is&k=20&c=cS2D-JTZAw799V8MD-2XpSHvJlsMoRU9m1bmj_oBBl0=",
+            "price": 12
+        },
+        {
+            "id": "011",
+            "category": "Myanmar",
+            "title": "Mohinga",
+            "description": "The national dish of Myanmar, Mohinga is a rice noodle soup with a fish-based broth flavored with lemongrass, turmeric, ginger, and garlic. It is typically garnished with crispy fried fritters, boiled eggs, and sliced banana stems.",
+            "image": "https://media.istockphoto.com/id/1166545915/photo/mohinga-at-dark-background.jpg?s=1024x1024&w=is&k=20&c=AJVV5fQngtnOXxp_n7QyOQxE-IbY--JRxeKkMSzGX1o=",
+            "price": 8
+        },
+        {
+            "id": "012",
+            "category": "Myanmar",
+            "title": "Laphet Thoke",
+            "description": "A unique salad made from fermented tea leaves mixed with a variety of ingredients such as shredded cabbage, tomatoes, roasted peanuts, sesame seeds, and fried garlic. It's known for its distinctive, slightly bitter taste and crunchy texture.",
+            "image": "https://media.istockphoto.com/id/1884066798/photo/burmese-myanmar-tea-leaf-salad-called-lahpet-thoke-recipe-with-djenkol-bean-slices.jpg?s=1024x1024&w=is&k=20&c=0Q57BsdZa95fOlT6aSy0YDMNgrWX3QgCTTTCDt94TSs=",
+            "price": 5
+        },
+        {
+            "id": "013",
+            "category": "Myanmar",
+            "title": "Shan Noodles",
+            "description": "Originating from the Shan state, this dish features rice noodles served with a savory chicken or pork tomato-based sauce, garnished with pickled mustard greens, crushed peanuts, and sometimes fried garlic. It can be served as a soup or a dry noodle dish.",
+            "image": "https://media.istockphoto.com/id/854277290/photo/burmese-noodles.jpg?s=1024x1024&w=is&k=20&c=Mq1wJMNdm-QdzDaIWfbxSjCtRag22PXUe5SjZbyLFg4=",
+            "price": 5
+        },
+        {
+            "id": "014",
+            "category": "Myanmar",
+            "title": "Ohn No Khao Swe",
+            "description": " A rich coconut milk-based noodle soup, similar to the Thai dish Khao Soi. It includes wheat noodles and is topped with chicken, boiled eggs, crispy fried noodles, and garnished with lime, onions, and coriander.",
+            "image": "https://media.istockphoto.com/id/1203693673/photo/ohn-no-khao-swe-on-white-marble-background-oh-no-khao-suey-is-coconut-milk-noodle-soup-of.jpg?s=1024x1024&w=is&k=20&c=ew53_NGaKHUp_xohyVc_pyz5k-5XJii_JNl7B_ypvmM=",
+            "price": 8
+        },
+        {
+            "id": "015",
+            "category": "Myanmar",
+            "title": "Burmese Curry",
+            "description": "Unlike its spicier counterparts in other Southeast Asian cuisines, Burmese curry tends to be milder and often features chicken, beef, pork, or fish. The curry is typically slow-cooked with onions, garlic, ginger, turmeric, and sometimes tomatoes, served with rice and various side dishes like pickled vegetables and lentil soup.",
+            "image": "https://media.istockphoto.com/id/526841640/photo/myanmar-food-set.jpg?s=1024x1024&w=is&k=20&c=C4aL6lNrUIVJHh9Z2sBzx_bdbJOn-ArJbj-sqdIAqQk=",
+            "price": 15
+        }
+    ]
+}

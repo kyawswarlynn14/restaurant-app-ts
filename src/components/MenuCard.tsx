@@ -1,32 +1,28 @@
 import { MouseEvent } from "react";
 import { BiPlus } from "react-icons/bi";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Menu } from "../types";
-import { RootState } from "../store";
 import { setMenuDetail } from "../store/menuSlice";
 import { addToCart } from "../store/cartSlice";
 
 function MenuCard({ menu }: {menu: Menu}) {
-    const { filterList } = useSelector((state: RootState) => state.menu);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-	const handleGoToDetails = (id: string) => {
-		const menu = filterList.find((i) => i.id === id);
+	const handleGoToDetails = () => {
 		dispatch(setMenuDetail(menu));
 		navigate("/details");
 	};
 
-	const handleAddToCart = (e: MouseEvent<HTMLButtonElement>, id: string) => {
+	const handleAddToCart = (e: MouseEvent<HTMLButtonElement>) => {
 		e.stopPropagation();
-		const menu = filterList.find((i) => i.id === id);
 		dispatch(addToCart(menu));
 	};
 
 	return (
 		<div
-			onClick={() => handleGoToDetails(menu.id)}
+			onClick={handleGoToDetails}
 			className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer"
 		>
 			<img
@@ -41,7 +37,7 @@ function MenuCard({ menu }: {menu: Menu}) {
 				</div>
 
 				<button
-					onClick={(e) => handleAddToCart(e, menu.id)}
+					onClick={handleAddToCart}
 					className="p-1 rounded-full border border-gray-700 "
 				>
 					<BiPlus size={25} />

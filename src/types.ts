@@ -11,7 +11,7 @@ export interface Menu {
 export interface MenuState {
     menuList: Menu[];
     filterList: Menu[];
-    menuDetail: Menu;
+    menuDetail: Menu | null;
     isFetchingMenu: boolean;
 }
 

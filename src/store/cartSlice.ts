@@ -1,7 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { CartState } from "../types";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { ICart, ICartState, IMenu } from "../types";
 
-const initialState: CartState = {
+const initialState: ICartState = {
 	cartList: [],
 };
 
@@ -9,33 +9,33 @@ export const cartSlice = createSlice({
 	name: "cart",
 	initialState,
 	reducers: {
-		setCartList: (state, { payload }) => {
-			state.cartList = payload;
+		setCartList: (state, action: PayloadAction<ICart[]>) => {
+			state.cartList = action.payload;
 		},
 
-		addToCart: (state, { payload }) => {
-			const id = payload?.id;
+		addToCart: (state, action: PayloadAction<IMenu>) => {
+			const id = action.payload?.id;
 			const menu = state.cartList.find((i) => i.id === id);
 			if (menu) {
 				menu.quantity += 1;
 			} else {
-				state.cartList.push({ ...payload, quantity: 1 });
+				state.cartList.push({ ...action.payload, quantity: 1 });
 			}
 		},
 
-		increaseQuantity: (state, { payload }) => {
-			const menu = state.cartList.find((i) => i.id === payload);
+		increaseQuantity: (state, action: PayloadAction<string>) => {
+			const menu = state.cartList.find((i) => i.id === action.payload);
 			if (menu) {
 				menu.quantity += 1;
 			}
 		},
 
-		decreaseQuantity: (state, { payload }) => {
-			const menu = state.cartList.find((i) => i.id === payload);
+		decreaseQuantity: (state, action: PayloadAction<string>) => {
+			const menu = state.cartList.find((i) => i.id === action.payload);
 			if (menu && menu.quantity > 1) {
 				menu.quantity -= 1;
 			} else {
-                state.cartList = state.cartList.filter(i => i.id !== payload);
+                state.cartList = state.cartList.filter(i => i.id !== action.payload);
             }
 		},
 	},

@@ -1,5 +1,5 @@
 
-export interface Menu {
+export interface IMenu {
     id: string;
     category: string;
     title: string;
@@ -8,17 +8,17 @@ export interface Menu {
     price: number;
 }
 
-export interface MenuState {
-    menuList: Menu[];
-    filterList: Menu[];
-    menuDetail: Menu | null;
+export interface IMenuState {
+    menuList: IMenu[];
+    filterList: IMenu[];
+    menuDetail: IMenu | null;
     isFetchingMenu: boolean;
 }
 
-export interface Cart extends Menu {
+export interface ICart extends IMenu {
     quantity: number;
 }
 
-export interface CartState {
-    cartList: Cart[];
+export interface ICartState {
+    cartList: ICart[];
 }

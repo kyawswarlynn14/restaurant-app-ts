@@ -1,7 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { MenuState } from "../types";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { IMenu, IMenuState } from "../types";
 
-const initialState: MenuState = {
+const initialState: IMenuState = {
 	menuList: [],
     filterList: [],
     menuDetail: null,
@@ -12,20 +12,20 @@ export const menuSlice = createSlice({
     name: "menu",
     initialState,
     reducers: {
-        setMenuList: (state, {payload}) => {
-            state.menuList = payload;
+        setMenuList: (state, action: PayloadAction<IMenu[]>) => {
+            state.menuList = action.payload;
         },
 
-        setFilterList: (state, {payload}) => {
-            state.filterList = payload;
+        setFilterList: (state, action: PayloadAction<IMenu[]>) => {
+            state.filterList = action.payload;
         },
 
-        setMenuDetail: (state, {payload}) => {
-            state.menuDetail = payload;
+        setMenuDetail: (state, action: PayloadAction<IMenu>) => {
+            state.menuDetail = action.payload;
         },
 
-        setIsFetchingMenu: (state, {payload}) => {
-            state.isFetchingMenu = payload;
+        setIsFetchingMenu: (state, action: PayloadAction<boolean>) => {
+            state.isFetchingMenu = action.payload;
         }
     }
 })

@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
-import { Cart } from "../types";
+import { ICart } from "../types";
 import {
 	increaseQuantity,
 	decreaseQuantity,
@@ -34,7 +34,7 @@ const Checkout: React.FC = () => {
 			) : (
 				<div className="w-full lg:w-[70%] mx-auto">
 					<ul className="">
-						{cartList.map((item: Cart) => (
+						{cartList.map((item: ICart) => (
 							<li
 								key={item.id}
 								className="flex justify-between items-center mb-2 border-b border-gray-700"

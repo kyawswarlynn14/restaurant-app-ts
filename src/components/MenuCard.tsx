@@ -2,11 +2,11 @@ import { MouseEvent } from "react";
 import { BiPlus } from "react-icons/bi";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { Menu } from "../types";
+import { IMenu } from "../types";
 import { setMenuDetail } from "../store/menuSlice";
 import { addToCart } from "../store/cartSlice";
 
-function MenuCard({ menu }: {menu: Menu}) {
+function MenuCard({ menu }: {menu: IMenu}) {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 

@@ -36,9 +36,9 @@ function Header() {
     }
 
 	return (
-		<div className="sticky top-0 w-full bg-yellow-500 px-10 py-3 flex justify-between items-center">
-			<div className="flex items-center gap-2">
-				<h1 className="text-[25px] font-bold tracking-wider leading-8">
+		<div className="sticky top-0 w-full bg-yellow-500 p-2 sm:px-10 sm:py-3 flex flex-col gap-3 md:flex-row justify-between items-center rounded-b-xl">
+			<div className="w-full md:w-fit flex items-center justify-between gap-2">
+				<h1 className="text-lg md:text-[25px] font-bold tracking-wider leading-8">
 					Noodle Bar
 				</h1>
 				<input
@@ -49,13 +49,13 @@ function Header() {
 					onChange={e => setSearchText(e.target.value)}
 				/>
 			</div>
-			<div className="flex items-center gap-2">
+			<div className="w-full md:w-fit flex items-center justify-between md:justify-start gap-2">
 				<button className="categoryButton" onClick={handleShowAllMenu}>All</button>
 				<button className="categoryButton" onClick={() => filterByCategory("Myanmar")}>Myanmar</button>
 				<button className="categoryButton" onClick={() => filterByCategory("Chinese")}>Chinese</button>
 				<button className="categoryButton" onClick={() => filterByCategory("Japanese")}>Japanese</button>
 
-				<button onClick={() => navigate('/checkout')} className="bg-white ml-2 font-bold p-2 rounded-full relative flex items-center justify-center">
+				<button onClick={() => navigate('/checkout')} className="bg-white md:ml-2 font-bold p-2 rounded-full relative flex items-center justify-center">
 					<BiCart size={20} />
 					<p className="absolute bg-red-600 text-white font-semibold text-sm -top-2 -right-2 w-5 h-5 rounded-full">
 						{cartItems}
